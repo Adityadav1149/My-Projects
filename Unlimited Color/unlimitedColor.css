@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #414141;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+h2,label{
+  margin-top: 15px;
+  padding-top: 15px;
+}
+
+label{
+  font-size: 29px;
+}
+
+button{
+  width: 10%;
+  font-size: large;
+  padding: 5px 0;
+  cursor: pointer;
+  border-radius: 9px;
+  border-style: none;
+}
+
+#start,#stop{
+  transition: background-color 0.3s linear;
+}
+#start:hover{
+  background-color: green;
+}
+
+#stop:hover{
+  background-color: red;
+}
+

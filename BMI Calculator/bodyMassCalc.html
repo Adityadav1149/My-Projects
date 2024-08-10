@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bodyMassCalc.css" />
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>bmi Calculator</h1>
+
+      <form>
+        <label for="height"
+          >Height(in cm) <input type="number" name="heigth" id="height"
+        /></label>
+
+        <label for="weight"
+          >Height(in kg) <input type="number" name="weight" id="weight"
+        /></label>
+
+        <button id="submit">Calculate</button>
+      </form>
+
+      <span id="result"></span>
+
+      <figure>
+        <figcaption>
+          Body mass index scores are broken down into the following categories:
+        </figcaption>
+        <ul>
+          <li><span>Underweight:</span> BMI less than 18.5</li>
+          <li><span>Normal weight:</span> BMI of 18.5 to 24.9</li>
+          <li><span>Overweight:</span> BMI of 25 to 29.9</li>
+          <li><span>Obesity:</span> BMI of 30 or higher</li>
+        </ul>
+      </figure>
+    </div>
+  </body>
+  <script src="bodyMassCalc.js"></script>
+</html>

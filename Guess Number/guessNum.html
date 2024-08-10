@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="guessNum.css" />
+    <title>Guess the number</title>
+  </head>
+  <body>
+    <h1>Project Guess the Number</h1>
+
+    <div class="container">
+      <div class="upperPara">
+        <p>Enter the number between 1 to 100.</p>
+        <p>You have only 10 chance</p>
+      </div>
+      <form>
+        <label for="inpNumber">Enter Number</label>
+        <input type="number" name="inpNumber" id="inpNumber" />
+
+        <input type="button" name="submit" id="submit" value="Submit" />
+      </form>
+
+      <div class="lowerPara">
+        <p>Number Entered by you:<span id="enterValue"></span></p>
+        <p>You have <span id="leftChance">10</span> chance left.</p>
+        <p id="resultOut"></p>
+        <p class="resetbtn"></p>
+      </div>
+    </div>
+  </body>
+  <script src="guessNum.js"></script>
+</html>
