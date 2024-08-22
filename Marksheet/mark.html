@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mark.css" />
+    <title>Students Marksheet</title>
+  </head>
+  <body>
+    <h1>Student Marksheet</h1>
+    <main>
+      <form id="myForm">
+        <div class="sub">
+          <div>
+            <label for="english">English</label>
+          </div>
+          <div>
+            <input
+              type="number"
+              id="english"
+              class="hide"
+              placeholder="English Mark" />
+          </div>
+        </div>
+
+        <div class="sub">
+          <div>
+            <label for="hindi">Hindi</label>
+          </div>
+          <div>
+            <input
+              type="number"
+              id="hindi"
+              class="hide"
+              placeholder="Hindi Mark" />
+          </div>
+        </div>
+
+        <div class="sub">
+          <div>
+            <label for="math">Math</label>
+          </div>
+          <div>
+            <input
+              type="number"
+              id="math"
+              class="hide"
+              placeholder="Math Mark" />
+          </div>
+        </div>
+
+        <div class="sub">
+          <div>
+            <label for="physics">Physics</label>
+          </div>
+          <div>
+            <input
+              type="number"
+              id="physics"
+              class="hide"
+              placeholder="Physics Mark" />
+          </div>
+        </div>
+
+        <div class="sub">
+          <div>
+            <label for="chemistry">Chemistry</label>
+          </div>
+          <div>
+            <input
+              type="number"
+              id="chemistry"
+              class="hide"
+              placeholder="Chemistry Mark" />
+          </div>
+        </div>
+
+        <div class="btn">
+          <input
+            type="button"
+            onclick="Result()"
+            id="calc"
+            class="hoverbtn"
+            value="Result" />
+          <input
+            type="button"
+            onclick="Reset()"
+            id="reset"
+            class="hoverbtn"
+            value="Reset" />
+        </div>
+      </form>
+
+      <div class="statusCard">
+        <table border="1" id="myTable">
+          <tr>
+            <td class="text">Total</td>
+            <td>500</td>
+          </tr>
+          <tr>
+            <td class="text">Obtend</td>
+            <td id="totalMark"></td>
+          </tr>
+          <tr>
+            <td class="text">Percentage</td>
+            <td id="perMark"></td>
+          </tr>
+          <tr>
+            <td class="text">Grade</td>
+            <td id="grade"></td>
+          </tr>
+          <tr>
+            <td class="text">Status</td>
+            <td id="status"></td>
+          </tr>
+        </table>
+        <!-- <h3 id="info"></h3> -->
+      </div>
+    </main>
+  </body>
+  <script src="mark.js"></script>
+</html>
